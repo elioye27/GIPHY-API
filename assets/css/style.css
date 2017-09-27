@@ -1,0 +1,107 @@
+
+body{
+	background-color: #110934; 
+}
+
+    
+form,
+input {
+  margin-bottom:  10px;
+  margin-top: 15px;
+  text-align: right;
+  color: #FC600A;
+	font: 20px arial, cursive, bold;
+}
+
+input{
+	text-align: justify;
+	font:15px arial times, cursive;
+}
+
+
+button {
+  background-color: blue; 
+  color: white;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+button:focus {
+	background-color: green;
+}
+
+button:hover {
+	background-color: skyblue;
+}
+
+
+img {
+	margin: 35px 50px 10px 50px;
+	width: 400PX;
+	height: 200px;
+	
+}
+
+p {
+	display: inline;
+	margin-left: -300px;
+	position: absolute;
+	color: #FC600A;
+	font-family: 'Monoton', cursive;
+	font-size: 15px;
+}
+
+
+label {
+    position: relative;
+    -webkit-animation: mymove 15s;
+    -webkit-animation-timing-function: linear;
+    animation: mymove 15s;
+    animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {right: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+
+@media screen and (max-width: 980px) {
+  body {
+    width: 100%; 
+    padding-left:150px;
+    padding-right:100px;
+   }
+
+      img {
+      width: 80%;
+      padding: auto;
+  } 
+}
+
+@media screen and (max-width: 640px) {
+   body {
+    width: 640;
+  }
+
+    img {
+      width: 80%;
+      padding: auto;
+  }
+}
+
+/* Header Static */
+@media screen and (max-width:640px) {
+  
+  body {
+    position: static;
+    width:100%;
+  }
+
+}
